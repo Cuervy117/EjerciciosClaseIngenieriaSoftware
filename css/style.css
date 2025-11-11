@@ -1,0 +1,26 @@
+body{
+    background-color: beige;
+}
+
+.primerElemento{
+    color: blue;
+    font-size: 20px;
+}
+
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+ #nav li{
+    margin: 5px;
+    padding: 10px 15px;
+ }
+
+ #nav li:hover{
+    background-color: rgb(136, 202, 169);
+ }
+ #nav a{
+    text-decoration: none;
+ }
