@@ -31,3 +31,27 @@ const btnEstrella = document.getElementById("btnEstrella");
 btnEstrella.addEventListener("click", () => {
     cielo.innerHTML += '⭐';
 });
+
+// Doble click
+const btnPlaneta = document.getElementById("btnPlaneta");
+
+btnPlaneta.addEventListener("dblclick", () => {
+    cielo.innerHTML += '🪐';
+});
+
+// input
+
+const inputEmoji = document.getElementById("inputEmoji");
+const btnAgregaEmoji = document.getElementById("btnAgregaEmoji");
+
+btnAgregaEmoji.addEventListener("click", () => {
+    var emoji = inputEmoji.value.trim();
+    if(emoji) cielo.innerHTML += emoji;
+    inputEmoji.value = "";
+});
+
+inputEmoji.addEventListener("keydown", e => {
+    if(e.key === "Escape") cielo.innerHTML = "";
+});
+
+

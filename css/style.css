@@ -24,3 +24,9 @@ body{
  #nav a{
     text-decoration: none;
  }
+
+ .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
