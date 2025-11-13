@@ -83,6 +83,14 @@ pre{
    color: greenyellow;
 }
 
-button{
+/* try catch */
+#bodyTry{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
+#mensaje{
+   font-weight: bold;
+   color: red;
 }
