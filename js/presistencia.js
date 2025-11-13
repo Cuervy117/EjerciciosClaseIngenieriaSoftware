@@ -12,6 +12,10 @@ function renderCarrito() {
 
 }
 
+if (carrito.length > 0) {
+    renderCarrito();
+}
+
 contenedor.addEventListener('click', e => {
     if (e.target.tagName === "BUTTON") {
         const nombre = e.target.parentElement.querySelector("h3").textContent;
