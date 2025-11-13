@@ -1,4 +1,4 @@
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("Carrito")) || [];
 
 const carritoLista = document.getElementById('carritoLista');
 
@@ -17,6 +17,10 @@ contenedor.addEventListener('click', e => {
         const nombre = e.target.parentElement.querySelector("h3").textContent;
         carrito.push(nombre);
 
+        localStorage.setItem("Carrito", JSON.stringify(carrito));
+
         renderCarrito();
     }
 });
+
+
