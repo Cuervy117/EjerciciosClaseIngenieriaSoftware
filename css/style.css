@@ -70,3 +70,19 @@ body{
    background-color: black;
    color: white;
 }
+
+
+/*Concurrencia*/
+
+pre{
+   text-align: left;
+   background-color: black;
+   padding: 1rem;
+   border-radius: 10px;
+   width: 80%;
+   color: greenyellow;
+}
+
+button{
+
+}
